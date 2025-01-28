@@ -1,0 +1,38 @@
+---
+import Whatsapp from '../assets/whatsapp.svg'
+import Copy from '../assets/copy.svg'
+import Flecha from '../assets/flecha.svg'
+---
+<div class="min-h-[20rem] bg-bg-porfolio text-color-text flex justify-center items-center">
+    <div class="flex flex-col items-center">
+        <p class="border 2 border-text-color-Download rounded-lg text-center min-w-36 text-color-text-relevant mb-2">✉️ Contacto</p>
+        <p class="text-4xl mb-10">¡Vamos a Conversar!</p>
+        <p class="flex justify-around items-center border 2 border-text-color-Download rounded-lg text-center min-w-32 min-h-9 cursor-pointer hover:bg-text-color-Download mb-2"><Whatsapp></Whatsapp> whatsapp</p>
+        <p>E-mail</p>
+        <div id="copyButton" class="flex justify-around items-center border 2 border-text-color-Download rounded-lg text-center min-w-72 min-h-9 cursor-pointer hover:bg-text-color-Download mb-10">
+            <p id="texto">villa310esteban@gmail.com</p>
+            <Copy class="w-6"></Copy>
+        </div>
+        <div id="subir" class="w-20 flex justify-around cursor-pointer">
+            <p>Subir</p>
+            <Flecha></Flecha>
+        </div>
+    </div>
+</div>
+
+<script>
+    const copyButton = document.getElementById('copyButton')! as HTMLElement;
+    const textInput = document.getElementById('texto') as HTMLElement;
+
+    //console.log(textInput.textContent)
+    copyButton.addEventListener('click',()=>{
+        const textContent = textInput.textContent ?? '';
+        navigator.clipboard.writeText(textContent)
+    });
+
+    const subir = document.getElementById('subir') as HTMLElement;
+    subir.addEventListener('click',()=>{
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  
+</script>
