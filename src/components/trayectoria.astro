@@ -12,8 +12,14 @@ import Book from '../assets/iconsExperiencia/book.svg';
 import Code from '../assets/iconsExperiencia/code.svg';
 import Laptop from '../assets/iconsExperiencia/laptop.svg';
 import IBM from '../assets/tecnologias/ibm.svg'
-import Python from '../assets/tecnologias/python.svg'
-import Postman from '../assets/tecnologias/postman.svg'
+import Backend from '../assets/iconsExperiencia/backend.svg'
+import Java from '../assets/tecnologias/java.svg'
+import SpringBoot from '../assets/tecnologias/springboot.svg'
+import Aws from '../assets/tecnologias/aws.svg'
+import Docker from '../assets/tecnologias/docker.svg'
+import AzureDevOps from '../assets/tecnologias/azuredevops.svg'
+import Lambda from '../assets/tecnologias/lambda.svg'
+
 ---
 <div id="Trayectoria" class="bg-bg-porfolio font-mono min-h-[80rem]">
     <div class="w-10/12 m-auto text-color-text flex flex-col justify-center items-center mb-8">
@@ -21,124 +27,202 @@ import Postman from '../assets/tecnologias/postman.svg'
         <p class="text-4xl mb-5">Trayectoria</p>
         <p class="text-center">Desde el 2019, he trabajado en diferentes proyectos de desarrollo web, tanto en el ámbito personal como profesional.</p>
     </div>
-    <div class="w-full md:w-10/12  m-auto text-color-text flex flex-wrap md:flex-row justify-around items-baseline">
-        <div class="w-full md:w-1/2 flex flex-col justify-center items-center">
-            <p class="text-3xl mb-5">Área profesional</p>
+    <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+            <!-- Área Profesional -->
+            <div class="space-y-8">
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-color-text mb-2">Área Profesional</h3>
+                    <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
+                </div>
 
-            <!-- Cards -->
-            <div class=" flex flex-col justify-center items-center border 2 border-text-color-Download rounded-xl w-2/3 p-3 mb-5 hover:bg-bg-content">
-                <img src={LaUrl.src} alt="LaUrl" class="rounded-xl mb-2"/>
-                <p class="text-2xl mb-2">laUrl.co</p>
-                <p class="text-center">laUrl.co es la solución perfecta para quienes buscan una manera práctica y eficiente de manejar sus URLs largas.</p>
-                <div class="w-full flex justify-around items-center mt-2 [&>*]:w-8">
-                    <Angular class=""></Angular>
-                    <HTML class=""></HTML>
-                    <CSS class=""></CSS>
-                    <JS class=""></JS>
-                    <Typescript class=""></Typescript>
-                </div>
-                <div class="w-full flex justify-around items-center mt-3">
-                    <a href="https://laurl.co" target="_blank"  class="">
-                        <Link class="w-10"></Link>
-                    </a>
-                    <a href="https://github.com/esteban-villa/LaUrl.co" target="_blank">
-                        <GitHub class="w-10"></GitHub>
-                    </a>
-                </div>
-            </div>
-
-            <div class="flex flex-col justify-center items-center border 2 border-text-color-Download rounded-xl w-2/3 p-3 mb-5 hover:bg-bg-content">
-                <Link class="w-32"></Link>
-                <p class="text-2xl text-center mb-2">API para acortar URLs</p>
-                <p class="text-center">La API que está en desarrollo ofrece acortamiento de URLs, personalización de dominios y análisis detallados de clics.</p>
-                <div class="w-1/3 flex justify-between items-center mt-2 [&>*]:w-8">
-                    <Python class=""></Python>
-                    <Postman class=""></Postman>
-                </div>
-            </div>
-            <div class="flex flex-col justify-center items-center border 2 border-text-color-Download rounded-xl w-2/3 p-3 mb-5 hover:bg-bg-content">
-                <Laptop class="w-32"></Laptop>
-                <p class="text-2xl text-center mb-2">Gestor de carga de contenido</p>
-                <p class="text-center">Prácticas laborales, trabajé como gestor de carga de contenido en la plataforma WebSphere para diferentes páginas web</p>
-                <div class="w-full flex justify-around items-center mt-2 [&>*]:w-8">
-                    <IBM class=""></IBM>
-                    <HTML class=""></HTML>
-                    <CSS class=""></CSS>
-                    <JS class=""></JS>
+                <!-- Card laUrl.co -->
+                <div class="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     
+                    <div class="relative z-10">
+                        <div class="mb-4 overflow-hidden rounded-xl">
+                            <img src={LaUrl.src} alt="LaUrl" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500"/>
+                        </div>
+                        
+                        <h4 class="text-2xl font-bold text-color-text mb-3 group-hover:text-blue-400 transition-colors duration-300">laUrl.co</h4>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            laUrl.co es la solución perfecta para quienes buscan una manera práctica y eficiente de manejar sus URLs largas.
+                        </p>
+                        
+                        <div class="flex flex-wrap justify-center gap-3 mb-4">
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <Angular class="w-6 h-6"></Angular>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <HTML class="w-6 h-6"></HTML>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <CSS class="w-6 h-6"></CSS>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <JS class="w-6 h-6"></JS>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <Typescript class="w-6 h-6"></Typescript>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-center gap-4">
+                            <a href="https://github.com/esteban-villa/LaUrl.co" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-600/20 hover:bg-gray-600/40 rounded-lg border border-gray-500/30 hover:border-gray-400 transition-all duration-300 text-gray-400 hover:text-gray-300">
+                                <GitHub class="w-5 h-5"></GitHub>
+                                <span class="text-sm font-medium">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card API ecommerce -->
+                <div class="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10">
+                        <!--<div class="mb-4 overflow-hidden rounded-xl">
+                            <img src={LaUrl.src} alt="LaUrl" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500"/>
+                        </div>-->
+                        
+                        <h4 class="text-2xl font-bold text-color-text mb-3 group-hover:text-blue-400 transition-colors duration-300">Proyecto Arka</h4>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            El proyecto Arka es una API de ecommerce desarrollada con Java y Spring Boot, que permite gestionar productos, usuarios y pedidos.
+                        </p>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            Consta de 8 microservicios y dos lambdas que trabajan en conjunto para ofrecer una solución completa y escalable.
+                        </p>
+                        
+                        <div class="flex flex-wrap justify-center gap-3 mb-4">
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <Java class="w-6 h-6"></Java>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <SpringBoot class="w-6 h-6"></SpringBoot>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <Aws class="w-6 h-6"></Aws>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <Docker class="w-6 h-6"></Docker>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <AzureDevOps class="w-6 h-6"></AzureDevOps>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <Lambda class="w-6 h-6"></Lambda>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-center gap-4">
+                            <a href="https://github.com/proyectoArka" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-600/20 hover:bg-gray-600/40 rounded-lg border border-gray-500/30 hover:border-gray-400 transition-all duration-300 text-gray-400 hover:text-gray-300">
+                                <GitHub class="w-5 h-5"></GitHub>
+                                <span class="text-sm font-medium">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Gestor de contenido -->
+                <div class="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-green-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-600/10 to-teal-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10">
+                        <!--<div class="flex justify-center mb-4">
+                            <div class="p-4 bg-green-500/20 rounded-full group-hover:bg-green-500/30 transition-colors duration-300">
+                                <Laptop class="w-16 h-16 text-green-400"></Laptop>
+                            </div>
+                        </div> -->
+                        
+                        <h4 class="text-2xl font-bold text-color-text mb-3 text-center group-hover:text-green-400 transition-colors duration-300">Gestor de carga de contenido</h4>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4 text-center">
+                            Prácticas laborales, trabajé como gestor de carga de contenido en la plataforma WebSphere para diferentes páginas web
+                        </p>
+                        
+                        <div class="flex flex-wrap justify-center gap-3">
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <IBM class="w-6 h-6"></IBM>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <HTML class="w-6 h-6"></HTML>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <CSS class="w-6 h-6"></CSS>
+                            </div>
+                            <div class="p-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors duration-300">
+                                <JS class="w-6 h-6"></JS>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="w-full md:w-1/2 flex flex-col justify-center items-center">
-            <p class="text-3xl mb-5">Académica</p>
 
-            <div class="flex flex-col justify-center items-center border 2 border-text-color-Download rounded-xl w-2/3 p-3 mb-5 hover:bg-bg-content">
-                <Code class="w-32">  </Code>
-                <p class="text-2xl text-center mb-2">Desarrollo Front-End</p>
-                <p class="text-center">Actualmente estoy realizando este estudio en la universidad EAFIT</p>
-                <!--
-                <div class="w-full flex justify-around items-center mt-2 [&>*]:w-8">
-                    <Angular class=""></Angular>
-                    <HTML class=""></HTML>
-                    <CSS class=""></CSS>
-                    <JS class=""></JS>
-                    <Typescript class=""></Typescript>
+            <!-- Área Académica -->
+            <div class="space-y-8">
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-color-text mb-2">Área Académica</h3>
+                    <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-pink-600 mx-auto rounded-full"></div>
                 </div>
-                <div class="w-full flex justify-around items-center mt-3">
-                    <a href="https://laurl.co" target="_blank"  class="">
-                        <Link class="w-10"></Link>
-                    </a>
-                    <a href="https://github.com/esteban-villa/LaUrl.co" target="_blank">
-                        <GitHub class="w-10"></GitHub>
-                    </a>
-                </div> -->
-            </div>
-
-            <div class="flex flex-col justify-center items-center border 2 border-text-color-Download rounded-xl w-2/3 p-3 mb-5 hover:bg-bg-content">
-                <Logo class="w-32">  </Logo>
-                <p class="text-2xl text-center mb-2">Ingeniería Software</p>
-                <p class="text-center">En el 2022 comencé a estudiar en el politécnico Grancolombiano</p>
-                <p class="text-center">Actualmente me encuentro en espera de título</p>
-                <!--
-                <div class="w-full flex justify-around items-center mt-2 [&>*]:w-8">
-                    <Angular class=""></Angular>
-                    <HTML class=""></HTML>
-                    <CSS class=""></CSS>
-                    <JS class=""></JS>
-                    <Typescript class=""></Typescript>
+                <!-- Card Ingeniería Software -->
+                <div class="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/20">
+                    <div class="absolute inset-0 bg-gradient-to-br from-orange-600/10 to-red-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="flex justify-center mb-4">
+                            <div class="p-4 bg-orange-500/20 rounded-full group-hover:bg-orange-500/30 transition-colors duration-300">
+                                <Logo class="w-16 h-16 text-orange-400"></Logo>
+                            </div>
+                        </div>
+                        
+                        <h4 class="text-2xl font-bold text-color-text mb-3 text-center group-hover:text-orange-400 transition-colors duration-300">Ingeniería de Software</h4>
+                        
+                        <div class="text-gray-300 text-sm leading-relaxed text-center space-y-1">
+                            <p>En el 2022 comencé a estudiar en el Politécnico Grancolombiano</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-full flex justify-around items-center mt-3">
-                    <a href="https://laurl.co" target="_blank"  class="">
-                        <Link class="w-10"></Link>
-                    </a>
-                    <a href="https://github.com/esteban-villa/LaUrl.co" target="_blank">
-                        <GitHub class="w-10"></GitHub>
-                    </a>
-                </div> -->
-            </div>
-
-            <div class="flex flex-col justify-center items-center border 2 border-text-color-Download rounded-xl w-2/3 p-3 mb-5 hover:bg-bg-content">
-                <Book class="w-32">  </Book>
-                <p class="text-2xl text-center mb-2">Tecnología en análisis y desarrollo de sistemas de información</p>
-                <p class="text-center">Entre el 2020 - 2022 realicé este estudio en el SENA en la sede de salada, Caldas, Antioquia.</p>
-                <!--
-                <div class="w-full flex justify-around items-center mt-2 [&>*]:w-8">
-                    <Angular class=""></Angular>
-                    <HTML class=""></HTML>
-                    <CSS class=""></CSS>
-                    <JS class=""></JS>
-                    <Typescript class=""></Typescript>
+                <!-- Card Desarrollo Front-End -->
+                <div class="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-pink-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="flex justify-center mb-4">
+                            <div class="p-4 bg-purple-500/20 rounded-full group-hover:bg-purple-500/30 transition-colors duration-300">
+                                <Code class="w-16 h-16 text-purple-400"></Code>
+                            </div>
+                        </div>
+                        
+                        <h4 class="text-2xl font-bold text-color-text mb-3 text-center group-hover:text-purple-400 transition-colors duration-300">Desarrollo Front-End</h4>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed text-center">
+                            Actualmente estoy realizando este estudio en la universidad EAFIT
+                        </p>
+                    </div>
                 </div>
-                <div class="w-full flex justify-around items-center mt-3">
-                    <a href="https://laurl.co" target="_blank"  class="">
-                        <Link class="w-10"></Link>
-                    </a>
-                    <a href="https://github.com/esteban-villa/LaUrl.co" target="_blank">
-                        <GitHub class="w-10"></GitHub>
-                    </a>
-                </div> -->
-            </div>
 
+                <!-- Card Back-End -->
+                <div class="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-cyan-500/50 transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/20">
+                    <div class="absolute inset-0 bg-gradient-to-br from-cyan-600/10 to-blue-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="flex justify-center mb-4">
+                            <div class="p-4 bg-cyan-500/20 rounded-full group-hover:bg-cyan-500/30 transition-colors duration-300">
+                                <Backend class="w-16 h-16 text-cyan-400"></Backend>
+                            </div>
+                        </div>
+                        
+                        <h4 class="text-xl font-bold text-color-text mb-3 text-center group-hover:text-cyan-400 transition-colors duration-300">Desarrollo Back-End</h4>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed text-center">
+                            Actualmente estoy realizando este estudio en Acelera TI.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
